@@ -10,10 +10,11 @@
     min-height: 400px;
 }
 
-.footer {
+footer {
     background-color: #D1C4E9;
     margin: 0 auto;
     padding: 20px 0;
+    text-align: justify;
 }
 
 .jumbotron {
@@ -28,6 +29,8 @@ address {
     margin: 0;
     color: #0f0f0f;
 }
-h6{
-    font-weight: bold;
+.coupyright{
+    text-align: center;
+    margin-bottom: 5px;
+
 }
