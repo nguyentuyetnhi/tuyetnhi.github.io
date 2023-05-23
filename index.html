@@ -11,34 +11,84 @@
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="click.js"></script>
+
     <title>Ristorante con Fusion | About Us</title>
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
-            
-            
+
+
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item "><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span
+                                class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+</span>
+
             </div>
+            <div id="loginModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Login </h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-4">
+                                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                        <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
         </div>
     </nav>
-            
-            
-        
+   
+
+
+
+
 
     <header class="jumbotron"><!--để làm nổi bật tên-->
-        
+
         <div class="container"><!-- hiển thi chiều rộng-->
             <div class="row row-header"><!--thêm hàng class -->
                 <div class="col-12 col-sm-6">
@@ -49,8 +99,16 @@
                 <div class="col-12 col-sm">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+               
+
+                <div class="col-12 col-sm">
+                    <a role="button" class="btn btn-block nav-link btn-warning"
+                    data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                    data-placement="bottom" href="#reserveform">Reserve Table</a>
+                </div>
+            
             </div>
-           
+
         </div>
     </header>
     <div class="container">
@@ -62,52 +120,155 @@
 
             <div class="container">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span></h2><span class="badge badge-pill badge-secondary">$4.99</span>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
-                            Italian pizza, topped with Cerignola olives, ripe vine
-                            cherry tomatoes, Vidalia onion, Guntur chillies and
-                            Buffalo Paneer.</p>
+                        <div class="row row-content align-items-center">
+                            <div class="col col-sm col-md">
+                                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span>
+                                    <span class="badge badge-pill badge-secondary">$4.99</span>
+                                </h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                    Italian pizza, topped with Cerignola olives, ripe vine
+                                    cherry tomatoes, Vidalia onion, Guntur chillies and
+                                    Buffalo Paneer.</p>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3">
+                                <h3>Our lipsmacking culinary creations</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 col-md-3">
-                        <h3>This Month's Promotions</h3>
-                    </div>
-                    <div class="col col-sm col-md">
-                        <h2>Weekend Grand Buffet</h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+
+                    <div class="media-body">
+                        <div class="row row-content align-items-center">
+                            <div class="col-12 col-sm-4 col-md-3">
+                                <h3>This Month's Promotions</h3>
+                            </div>
+                            <div class="col col-sm col-md">
+
+                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+
+                                <p>Featuring mouthwatering combinations with a choice of five different salads, six
+                                    enticing
+                                    appetizers, six main entrees and five choicest desserts. Free flowing bubbly and
+                                    soft
+                                    drinks. All for just $19.99 per person </p>
+
+
+                            </div>
+                            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                        </div>
                     </div>
                 </div>
-        
-                <div class="row row-content align-items-center">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
+                        alt="Alberto Somayya">
+                    <div class="media-body">
+                        <div class="row row-content align-items-center">
+                            <div class="col col-sm col-md">
+                                <h2 class="mt-0">Alberto Somayya </span>
+                                </h2>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                    International experience having worked closely with
+                                    whos-who in the culinary world, he specializes in
+                                    creating mouthwatering Indo-Italian fusion experiences.</p>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3">
+                                <h3>Meet our Culinary Specialists</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- <div class="row row-content align-items-center">
                     <div class="col-12 col-sm-4 col-md-3">
                         <h3>Meet our Culinary Specialists</h3>
                     </div>
+                    <div class="media">
+                        <div class="col col-sm col-md">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center"
+                                src="img/alberto.png" alt="Alberto Somayya">
+                        <div class="media-body">
+                
+                            <h2 class="mt-0">Alberto Somayya <span class="badge badge-danger">NEW</span></h2>
+                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                International experience having worked closely with
+                                whos-who in the culinary world, he specializes in
+                                creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                                </div>
+                                </div>
+                        </div>
+              </div>-->
+                <div class="container">
+                    <div class="row">
+                        <div id="reserveTable">
+                            <div class="card col-12 offset-sm-2 col-sm-8 align-self-center">
+                                <div class="row card-header">
+                                    Reserve a Table
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <div class="input-group row container">
+                                            <div class="col-12 col-sm-2">
+                                                <span class="text" id="">Number of Guests</span>
+                                            </div>
+                                            <div class="col-12 col-sm-7">
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    1</label>
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    2</label>
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    3</label>
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    4</label>
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    5</label>
+                                                <label class="radio-inline label1"><input type="radio" name="optradio">
+                                                    6</label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="container ">
+                                            <!-- Form date-time -->
+                                            <div class='input-group date row'>
+                                                <div class="col-12 col-sm-2">
+                                                    <span class="text" id="">Date and Time</span>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <input type='text' class="form-control"
+                                                                    placeholder="Date" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <input type='text' class="form-control"
+                                                                    placeholder="Time" />
+                                                            </div>
+                                                        </div>
 
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/alberto.png" alt="Alberto Somayya">
-                    <div class="media-body">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
-                            International experience having worked closely with
-                            whos-who in the culinary world, he specializes in
-                            creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                                                    </div>
+                                                    <br>
+                                                    <div class="col-lg-6">
+                                                        <a href="#reverse-card" class="btn btn-primary"> Reserve </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- Card Body -->
                     </div>
-                </div>
-
-                        
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <footer>
         <div class="container">
@@ -133,7 +294,7 @@
 
                     </address>
                 </div>
-                <div class="col-12 col-sm-4 text-center" >
+                <div class="col-12 col-sm-4 text-center">
                     <h5>Social Media Links</h5>
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
@@ -163,6 +324,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+
 </body>
 
 </html>
