@@ -32,5 +32,85 @@ address {
 .coupyright{
     text-align: center;
     margin-bottom: 5px;
+ 
 
 }
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+    width: 100%;
+    margin: auto;
+}
+.navbar-dark {
+    background-color: #512DA8;
+}
+.badge badge-danger{
+    margin-left: 100px;
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+button.btn btn-primary{
+    background-color:#fa9332;
+ 
+    color: white;
+    border-radius: 5px;
+}
+
+
+.card h2{
+    background-color: #fa9332;
+    color: white;
+    padding: 20px;
+    
+}
+ 
+ #rtabel{
+    color: black;
+    border-radius: 25px;
+  }
+  .navbar-dark {
+       background-color: #512DA8;
+  }
+  #reserveTable{
+  padding: 30px 10px 10px 10px;
+  width: 90%;
+    }
+    
+    .card-header{
+      
+      font-size: xx-large;
+    }
+    
+    .modal-header{
+      background-color: #512DA8;
+      color: white;
+    }
+    .tab-content {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+  }
+  .label1{
+    padding-right: inherit;
+  }
+
+  .carousel {
+    background:#512DA8;
+}
+.carousel-item {
+  height: 300px;
+}
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+  
+  
